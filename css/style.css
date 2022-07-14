@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+:root{
+    --vermelho: #E50915;
+    --preta: #141414;
+}
+
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .logo{
+
+padding: 10px;
+color: var(--vermelho);
+font-family: 'Arial Black', times;
+font-size: 40px;
+}
+
+.filme-principal .container{
+    margin-left: 30px;
+}
+
+.menu > ul, li > a{
+
+    color: white;
+    display: flex;
+    padding: 10px;
+}
+
+.menu > ul, li > a:hover{
+    color: rgb(175, 175, 175);
+}
+
+body{
+    background-color: var(--preta);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Filme principal*/
+
+.filme-principal{
+    font-size:1rem;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(../img/thumb-1920-680757.png) ;
+    
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 2.25rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+ 
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.botao{
+    background: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.botao >a{
+    color: white;
+}
+
+.botao:hover{
+    background-color: rgba(255, 255, 255, 0.315);
+    color: black;
+    transition: .3s ease-in-out;
+}
+
+.botoes i{
+    margin-right: 5px;
+}
+
+.carossel-filmes{
+    margin-top: 5px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
